@@ -1,1 +1,1 @@
-### React Event Bubbling Example
+### React VS Redux Event Bubbling Example

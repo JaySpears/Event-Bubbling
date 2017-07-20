@@ -5,8 +5,7 @@ import React, { Component } from 'react';
 import MainSceneStyles from './styles.scss';
 
 // Import components.
-import Container from '../../components/container/index.jsx';
-import ReactComponent from './components/react-example/index.jsx';
+import PrimaryComponent from './primary-component/index.jsx';
 
 class MainScene extends React.Component{
   // Component constructor.
@@ -17,9 +16,9 @@ class MainScene extends React.Component{
 
   render(){
     return(
-      <Container>
-        <ReactComponent/>
-      </Container>
+      <div>
+        <PrimaryComponent/>
+      </div>
     );
   }
 }

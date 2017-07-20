@@ -1,0 +1,35 @@
+// Import styling base.
+@import './../../../../../assets/styles/base.scss';
+
+.tertiary {
+  background-color: white;
+  font-family: $roboto-stack;
+  text-align: center;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 300px;
+  padding: 20px 0px;
+  border-radius: 3px;
+  p {
+    font-weight: 600;
+  }
+  div {
+    margin-bottom: 10px;
+    select {
+      margin-left: 10px;
+    }
+  }
+  label {
+    font-size: 14px;
+  }
+  button {
+    font-size: 14px;
+    background: none;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}

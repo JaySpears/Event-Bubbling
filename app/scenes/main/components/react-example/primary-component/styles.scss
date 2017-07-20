@@ -1,0 +1,16 @@
+// Import styling base.
+@import './../../../../../assets/styles/base.scss';
+
+.primary {
+  font-family: $roboto-stack;
+  text-align: center;
+  margin: 0 auto 50px auto;
+  border: 1px solid black;
+  width: 500px;
+  padding: 20px 0px;
+  border-radius: 3px;
+  p{
+    margin: 0 0 20px 0;
+    font-weight: 600;
+  }
+}
