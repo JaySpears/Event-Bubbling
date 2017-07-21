@@ -2,9 +2,9 @@
 import React, { Component } from 'react';
 
 // Import scene styles.
-import TertiaryComponentStyles from './styles.scss';
+import ComponentOneStyles from './styles.scss';
 
-class TertiaryComponent extends React.Component{
+class ComponentOne extends React.Component{
   // Component constructor.
   constructor(props){
     console.log(props);
@@ -32,7 +32,7 @@ class TertiaryComponent extends React.Component{
   render(){
     return(
       <div className="tertiary">
-        <p>Tertiary Component</p>
+        <p>Component 1</p>
         <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="primaryBackground">
@@ -64,4 +64,4 @@ class TertiaryComponent extends React.Component{
 }
 
 // Export scene.
-export default TertiaryComponent;
+export default ComponentOne;

@@ -2,12 +2,12 @@
 import React, { Component } from 'react';
 
 // Import scene styles.
-import PrimaryComponentStyles from './styles.scss';
+import ComponentThreeStyles from './styles.scss';
 
 // Import components.
-import SecondaryComponent from '../secondary-component/index.jsx';
+import ComponentTwo from '../component-two/index.jsx';
 
-class PrimaryComponent extends React.Component{
+class ComponentThree extends React.Component{
   // Component constructor.
   constructor(props){
     super(props);
@@ -27,12 +27,12 @@ class PrimaryComponent extends React.Component{
   render(){
     return(
       <div className="primary" style={{"backgroundColor" : this.state.backgroundColor}}>
-        <p>Primary Component</p>
-        <SecondaryComponent onChange={this.handleChange}/>
+        <p>Component 3</p>
+        <ComponentTwo onChange={this.handleChange}/>
       </div>
     );
   }
 }
 
 // Export scene.
-export default PrimaryComponent;
+export default ComponentThree;

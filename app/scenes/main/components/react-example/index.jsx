@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import MainSceneStyles from './styles.scss';
 
 // Import components.
-import PrimaryComponent from './primary-component/index.jsx';
+import ComponentThree from './component-three/index.jsx';
 
 class MainScene extends React.Component{
   // Component constructor.
@@ -16,8 +16,9 @@ class MainScene extends React.Component{
 
   render(){
     return(
-      <div>
-        <PrimaryComponent/>
+      <div className="react-example">
+        <ComponentThree/>
+        <img src="app/assets/images/react-example.png" alt=""/>
       </div>
     );
   }
