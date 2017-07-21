@@ -20,14 +20,14 @@ class ComponentTwo extends React.Component{
   handleChange(styles){
     event.preventDefault();
     this.setState({
-      backgroundColor: styles.secondaryBackground
+      backgroundColor: styles.componentTwoBackground
     });
     this.props.onChange(styles);
   }
 
   render(){
     return(
-      <div className="secondary" style={{"backgroundColor" : this.state.backgroundColor}}>
+      <div className="component-two" style={{"backgroundColor" : this.state.backgroundColor}}>
         <p>Component 2</p>
         <ComponentOne onSubmit={this.handleChange}/>
       </div>

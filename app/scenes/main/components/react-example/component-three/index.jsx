@@ -20,13 +20,14 @@ class ComponentThree extends React.Component{
   handleChange(styles){
     event.preventDefault();
     this.setState({
-      backgroundColor: styles.primaryBackground
+      backgroundColor: styles.componentThreeBackground
     });
+    this.props.onChange(styles);
   }
 
   render(){
     return(
-      <div className="primary" style={{"backgroundColor" : this.state.backgroundColor}}>
+      <div className="component-three" style={{"backgroundColor" : this.state.backgroundColor}}>
         <p>Component 3</p>
         <ComponentTwo onChange={this.handleChange}/>
       </div>

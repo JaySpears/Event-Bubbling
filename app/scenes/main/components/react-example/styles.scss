@@ -1,4 +1,25 @@
+@import '../../../../assets/styles/base.scss';
 .react-example{
+  h1{
+    font-family: $roboto-stack;
+    margin-bottom: 0px;
+    display: inline-block;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+  }
+  h3{
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    margin: 10px 0px 60px 0px;
+    font-family: $roboto-stack;
+  }
+  p{
+    font-size: 14px;
+    font-family: $roboto-stack;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+  }
   img{
     width: 80%;
   }
