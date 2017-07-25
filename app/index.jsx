@@ -13,6 +13,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import app from './reducers'
+
+let store = createStore(app);
+
+console.log(store);
 
 // Import scences.
 import routes from './routes/index.js';
@@ -21,9 +28,11 @@ import routes from './routes/index.js';
 import Container from './components/container/index.jsx';
 
 ReactDOM.render(
-  <Container>
-    <Router>{routes}</Router>
-  </Container>,
+  <Provider store={store}>
+    <Container>
+      <Router>{routes}</Router>
+    </Container>
+  </Provider>,
   document.getElementById('application')
 );
 
